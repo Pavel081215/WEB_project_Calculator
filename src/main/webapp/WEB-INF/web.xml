@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+		 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+
+<welcome-file-list>
+    <welcome-file>firstNO.html</welcome-file>
+</welcome-file-list>
+
+    <servlet>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>work.controller.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/log</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>questionController</servlet-name>
+        <servlet-class>work.controller.QuestionController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>questionController</servlet-name>
+        <url-pattern>/question</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>answerController</servlet-name>
+        <servlet-class>work.controller.AnswerController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>answerController</servlet-name>
+        <url-pattern>/answer</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>admin</servlet-name>
+        <servlet-class>work.controller.AdminController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>admin</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+
+</web-app>
